@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<title>
+	News Classifier Service
+</title>
+<body>
+	<div class='container'>
+		<h1>News Classification using Neural Networks</h1>
+		<form action="{% url 'results' %}" method="POST">
+			{% csrf_token %}
+			<input type="text" placeholder="Paste the news headline here...." name="news_textbox" size="80"/>
+			<input type="submit" class="btn" value="Submit" name="submit">
+		</form>
+		<h3>Click Submit to know the news category!</h3>
+	</div>
+</body>
+</html>
